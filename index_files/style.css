@@ -4,3 +4,8 @@
 	width: 1000px;
 	margin: 0 auto;
 }
+
+svg * {
+    font-family: 'Old Standard TT', sans-serif;
+    font-size: 14px;
+}
