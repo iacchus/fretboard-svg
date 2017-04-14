@@ -70,8 +70,10 @@ $(document).ready(function(){
 
 	var tr = table.selectAll('tr').data(rdata).enter().append('tr')
 
-	tr.append('td').html(function(d){ return d[0] });
-	tr.append('td').html(function(d){ return d[1] });
-	tr.append('td').html(function(d){ return d[2] });
+	for(yep=0; yep < rdata.length; yep++) {
+		tr.append('td').html(function(d){ return d[yep] });
+	}
+	//tr.append('td').html(function(d){ return d[1] });
+	//tr.append('td').html(function(d){ return d[2] });
   }) // on input change
 })
