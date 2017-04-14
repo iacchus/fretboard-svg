@@ -16,3 +16,11 @@ input {
     border: 1px solid #999;
     border-left: 5px solid #336;
 }
+
+.circ-selected {
+	fill: "#336";
+}
+
+.text-selected {
+	fill: "#fff";
+}
