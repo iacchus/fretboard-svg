@@ -67,7 +67,7 @@ $(document).ready(function(){
 
 	var table = d3.select('#info').append('table')
 
-	var tr = table.selectAll('tr').data(data).enter().append('tr')
+	var tr = table.selectAll('tr').data(rdata).enter().append('tr')
 
 	tr.append('td').html(function(d){ return d[0] });
 	tr.append('td').html(function(d){ return d[1] });
