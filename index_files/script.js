@@ -28,13 +28,13 @@ $(document).ready(function(){
   	var chord_name = $(this).val()
 	var chord = teoria.chord(chord_name)
 
-	var notes = chord.simple().toString().replace('#', 'u')
+	var notes = chord.simple().toString()
 	var voicing = chord.voicing().toString()
 
 	data = []
 	
 	int_names = voicing.split(',')
-	note_names = notes.split(',')
+	note_names = notes.replace('#', 'u').split(',')
 	semi_tones = []
 
 	cd_vc = chord.voicing()
