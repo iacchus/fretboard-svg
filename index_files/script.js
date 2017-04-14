@@ -39,7 +39,9 @@ $(document).ready(function(){
 	note_names = notes.split(',')
 	semi_tones = []
 
-	for(lol=0;voicing[lol];lol++) { semi_tones.push(chord.voicing()[lol].semitones())  }
+	cd_vc = chord.voicing()
+
+	for(lol=0;cd_vc[lol];lol++) { semi_tones.push(cd_vc[lol].semitones())  }
 	
 	data.push(int_names, note_names, semi_tones)
 
