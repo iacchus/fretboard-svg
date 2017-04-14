@@ -7,14 +7,14 @@ $(document).ready(function(){
 
 	//var notes = chord.notes()
 	var notes = chord.simple()
-	var voicings = chord.voicings()
+	var voicing = chord.voicing()
 
 	data = []
 	for(note=0; notes[note]; note++)
 	{
 		//console.yylog(notes[note].name());
 	        note_name = notes[note]
-		int_semitones = voicings[note]
+		int_semitones = voicing[note]
 	  	data.push([note_name, int_semitones])
 	}	 
 	console.log(data);
