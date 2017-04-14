@@ -29,10 +29,12 @@ $(document).ready(function(){
 	var chord = teoria.chord(chord_name)
 
 	//var notes = chord.notes()
-	var notes = chord.simple()
+	//var notes = chord.simple()
+	var notes = chord.notes()
 	var voicing = chord.voicing()
 
 	data = []
+	  /*
 	for(note=0; notes[note]; note++)
 	{
 		int_name = voicing[note].simple().toString()
@@ -40,6 +42,16 @@ $(document).ready(function(){
 		int_semitones = voicing[note].semitones()
 	  	data.push([int_name,note_name, int_semitones])
 	}	
+	*/
+
+	//int_names = voicing.simple().toString().split(',')
+	int_names = voicing.toString().split(',')
+	note_names = notes.toString().replace('#', 'u').split(',')
+	semi_tones = []
+
+	for(lol=0;voicing[lol];lol++) { semitones.push(voicing[lol].semitones())  }
+	
+	data.push([int_names, note_names, semi_tones])
 
 	window.data = data
 	console.log(data)
@@ -47,18 +59,19 @@ $(document).ready(function(){
 	//$()
 
 
-	for(note=0; data[note]; note++)
+	for(item=0; data[item]; item++)
 	{
-		cell_class = ".note-cell-name-" + data[note][1]
-		circ_class = ".note-circ-name-" + data[note][1]
-		text_class = ".note-text-name-" + data[note][1]
-		$(cell_class).each(function(){$(this).addClass("cell-selected cell-int-" + data[note][2])})
-		$(circ_class).each(function(){$(this).addClass("circ-selected circ-int-" + data[note][2])})
-		$(text_class).each(function(){$(this).addClass("text-selected text-int-" + data[note][2])})
+		cell_class = ".note-cell-name-" + data[item][1]
+		circ_class = ".note-circ-name-" + data[item][1]
+		text_class = ".note-text-name-" + data[item][1]
+		$(cell_class).each(function(){$(this).addClass("cell-selected cell-int-" + data[item][2])})
+		$(circ_class).each(function(){$(this).addClass("circ-selected circ-int-" + data[item][2])})
+		$(text_class).each(function(){$(this).addClass("text-selected text-int-" + data[item][2])})
 	}
 
+	  /*
 	rdata = Array()
-	for(item=0; item<=data.length-1; item++) {
+	for(item=0; data[item]; item++) {
 		rdata[item] = []
 
 		for(aloop=0;aloop<=data.length-1;aloop++) {
@@ -68,10 +81,11 @@ $(document).ready(function(){
 	}
 
 	console.log(rdata);
+	*/
 
 	var table = d3.select('#info').append('table').attr('id','info-table')
 
-	var tr = table.selectAll('tr').data(rdata).enter().append('tr')
+	var tr = table.selectAll('tr').data(data).enter().append('tr')
 
 	for(yep=0; yep <= rdata.lengthi-1; yep++) {
 		tr.append('td').html(function(d){ return d[yep] });
