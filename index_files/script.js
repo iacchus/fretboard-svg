@@ -54,12 +54,16 @@ $(document).ready(function(){
 		$(text_class).each(function(){$(this).addClass("text-selected text-int-" + data[note][2])})
 	}
 
-	/*rdata = []
+	rdata = []
 	for(item=0;data[item];item++) {
-		rdata.push()
-	}*/
+		rdata[item] = []
 
-	console.log(data);
+		for(aloop=0;data[item][aloop];aloop++) {
+			rdata[item].push(data[aloop][item])
+		}
+	}
+
+	console.log(rdata);
 
 /*	var table = d3.select('#info').append('table')
 
