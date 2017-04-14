@@ -36,7 +36,7 @@ $(document).ready(function(){
 	for(note=0; notes[note]; note++)
 	{
 		int_name = voicing[note].simple().toString()
-	        note_name = notes[note].replace('#','u')
+	        note_name = notes[note].replace('#', 'u')
 		int_semitones = voicing[note].semitones()
 	  	data.push([int_name,note_name, int_semitones])
 	}	
@@ -72,7 +72,7 @@ $(document).ready(function(){
 
 	var tr = table.selectAll('tr').data(rdata).enter().append('tr')
 
-	for(yep=0; yep <= rdata.length; yep++) {
+	for(yep=0; yep < rdata.length-1; yep++) {
 		tr.append('td').html(function(d){ return d[yep] });
 	}
 
