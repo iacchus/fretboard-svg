@@ -60,8 +60,8 @@ $(document).ready(function(){
 
 	var tr = table.selectAll('tr').data(data).enter().append('tr')
 
-	var td = tr.html(funtion(d){ return d[0] });
-	var td = tr.html(funtion(d){ return d[1] });
-	var td = tr.html(funtion(d){ return d[2] });
+	tr.append('td').html(funtion(d){ return d[0] });
+	tr.append('td').html(funtion(d){ return d[1] });
+	tr.append('td').html(funtion(d){ return d[2] });
   })
 })
