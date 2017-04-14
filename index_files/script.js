@@ -54,11 +54,16 @@ $(document).ready(function(){
 		$(text_class).each(function(){$(this).addClass("text-selected text-int-" + data[note][2])})
 	}
 
+	/*rdata = []
+	for(item=0;data[item];item++) {
+		rdata.push()
+	}*/
+
 	console.log(data);
 
 	var table = d3.select('#info').append('table')
 
-	var tr = table.selectAll('tr').data(data).enter().append('tr').enter()
+	var tr = table.selectAll('tr').data(data).enter().append('tr')
 
 	tr.append('td').html(function(d){ return d[0] });
 	tr.append('td').html(function(d){ return d[1] });
