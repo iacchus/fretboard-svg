@@ -5,6 +5,11 @@
 	margin: 0 auto;
 }
 
+#info {
+	width: 1000px;
+	margin: 17px auto;
+}
+
 svg * {
     font-family: 'Old Standard TT', sans-serif;
     font-size: 14px;
@@ -19,6 +24,10 @@ input {
     border: 1px solid #999;
     border-radius: 2px;
     border-left: 5px solid #336;
+
+   position: fixed;
+   bottom: 7px;
+   right: 7px;
 }
 
 .circ-selected {
