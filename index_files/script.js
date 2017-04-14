@@ -8,6 +8,6 @@ $(document).ready(function(){
 	var notes = chord.notes()
 
 	for(note=0; notes[note]; note++)
-		console.log(notes[note]);
+		console.log(notes[note].name);
   })
 })
