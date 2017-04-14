@@ -61,13 +61,13 @@ $(document).ready(function(){
 
 	console.log(data);
 
-	var table = d3.select('#info').append('table')
+/*	var table = d3.select('#info').append('table')
 
 	var tr = table.selectAll('tr').data(data).enter().append('tr')
 
 	tr.append('td').html(function(d){ return d[0] });
 	tr.append('td').html(function(d){ return d[1] });
-	tr.append('td').html(function(d){ return d[2] });
+	tr.append('td').html(function(d){ return d[2] });*/
 	//tr.append('td').html(function(d){ return d[0] }).append('td').html(function(d){ return d[1] }).append('td').html(function(d){ return d[2] });
   }) // on input change
 })
