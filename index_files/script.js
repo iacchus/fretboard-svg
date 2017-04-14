@@ -28,9 +28,6 @@ $(document).ready(function(){
   	var chord_name = $(this).val()
 	var chord = teoria.chord(chord_name)
 
-	//var notes = chord.notes()
-	//var notes = chord.simple()
-	//var notes = chord.notes().simple().toString().replace('#', 'u')
 	var notes = chord.simple().toString().replace('#', 'u')
 	var voicing = chord.voicing().toString()
 
@@ -52,29 +49,16 @@ $(document).ready(function(){
 	//$()
 
 
-	for(item=0; data[item]; item++)
+	for(item=0; data[0][item]; item++)
 	{
-		cell_class = ".note-cell-name-" + data[item][1]
-		circ_class = ".note-circ-name-" + data[item][1]
-		text_class = ".note-text-name-" + data[item][1]
-		$(cell_class).each(function(){$(this).addClass("cell-selected cell-int-" + data[item][2])})
-		$(circ_class).each(function(){$(this).addClass("circ-selected circ-int-" + data[item][2])})
-		$(text_class).each(function(){$(this).addClass("text-selected text-int-" + data[item][2])})
+		cell_class = ".note-cell-name-" + data[1][item]
+		circ_class = ".note-circ-name-" + data[1][item]
+		text_class = ".note-text-name-" + data[1][item]
+		$(cell_class).each(function(){$(this).addClass("cell-selected cell-int-" + data[2][item])})
+		$(circ_class).each(function(){$(this).addClass("circ-selected circ-int-" + data[2][item])})
+		$(text_class).each(function(){$(this).addClass("text-selected text-int-" + data[2][item])})
 	}
 
-	  /*
-	rdata = Array()
-	for(item=0; data[item]; item++) {
-		rdata[item] = []
-
-		for(aloop=0;aloop<=data.length-1;aloop++) {
-			//rdata[item].push(data[aloop][item])
-			rdata[item][aloop] = data[aloop][item]
-		}
-	}
-
-	console.log(rdata);
-	*/
 
 	var table = d3.select('#info').append('table').attr('id','info-table')
 
