@@ -34,7 +34,7 @@ $(document).ready(function(){
 	data = []
 	
 	int_names = voicing.split(',')
-	note_names = notes.replace('#', 'u').split(',')
+	note_names = notes.split(',')
 	semi_tones = []
 
 	cd_vc = chord.voicing()
@@ -51,9 +51,9 @@ $(document).ready(function(){
 
 	for(item=0; data[0][item]; item++)
 	{
-		cell_class = ".note-cell-name-" + data[1][item]
-		circ_class = ".note-circ-name-" + data[1][item]
-		text_class = ".note-text-name-" + data[1][item]
+		cell_class = ".note-cell-name-" + data[1][item].replace('#', 'u')
+		circ_class = ".note-circ-name-" + data[1][item].replace('#', 'u')
+		text_class = ".note-text-name-" + data[1][item].replace('#', 'u')
 		$(cell_class).each(function(){$(this).addClass("cell-selected cell-int-" + data[2][item])})
 		$(circ_class).each(function(){$(this).addClass("circ-selected circ-int-" + data[2][item])})
 		$(text_class).each(function(){$(this).addClass("text-selected text-int-" + data[2][item])})
