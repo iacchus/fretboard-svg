@@ -23,6 +23,8 @@ $(document).ready(function(){
 		});
 	})
 
+	$('#info-table').remove();
+
   	var chord_name = $(this).val()
 	var chord = teoria.chord(chord_name)
 
@@ -77,7 +79,7 @@ $(document).ready(function(){
 
 	console.log(rdata);
 
-	var table = d3.select('#info').append('table').attr('id','infotable')
+	var table = d3.select('#info').append('table').attr('id','info-table')
 
 	var tr = table.selectAll('tr').data(rdata).enter().append('tr')
 
