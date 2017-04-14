@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 	//var notes = chord.notes()
 	//var notes = chord.simple()
-	var notes = chord.notes().toString().replace('#', 'u')
+	var notes = chord.notes().simple().toString().replace('#', 'u')
 	var voicing = chord.voicing().toString()
 
 	data = []
