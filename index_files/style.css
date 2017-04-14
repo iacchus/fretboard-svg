@@ -23,7 +23,7 @@ input {
 
 .circ-selected {
 	fill: #336;
-	fill-opacity: 0.7;
+	fill-opacity: 0.8;
 }
 
 .text-selected {
@@ -33,6 +33,11 @@ input {
 .fret-1 { stroke-width:4; }
 
 /* position labels */
+
+.pos-label, .pos-highlight
+{
+	fill-opacity: 1;
+}
 
 .pos-label-1, .pos-highlight-1
 {
