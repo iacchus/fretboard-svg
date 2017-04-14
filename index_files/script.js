@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 	for(lol=0;voicing[lol];lol++) { semi_tones.push(voicing[lol].semitones())  }
 	
-	data.push([int_names, note_names, semi_tones])
+	data.push(int_names, note_names, semi_tones)
 
 	window.data = data
 	console.log(data)
