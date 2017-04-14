@@ -72,7 +72,7 @@ $(document).ready(function(){
 
 	var tr = table.selectAll('tr').data(rdata).enter().append('tr')
 
-	for(yep=0; yep < rdata.length-1; yep++) {
+	for(yep=0; yep < rdata.length; yep++) {
 		tr.append('td').html(function(d){ return d[yep] });
 	}
 
