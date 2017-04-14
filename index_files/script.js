@@ -2,6 +2,27 @@ $(document).ready(function(){
   $('#main').load('fretboard.svg')
 
   $("#chordname").change(function(){
+
+	$("rect").each(function(){
+		$(this).removeClass('cell-selected')
+		$(this).removeClass (function (index, className) {
+			return (className.match (/(^|\s)cell-int-\S+/g) || []).join(' ');
+		});
+	})
+	$("circle").each(function(){
+		$(this).removeClass('circ-selected')
+		$(this).removeClass (function (index, className) {
+			return (className.match (/(^|\s)circ-int-\S+/g) || []).join(' ');
+		});
+	})
+
+	$("text").each(function(){
+		$(this).removeClass('text-selected')
+		$(this).removeClass (function (index, className) {
+			return (className.match (/(^|\s)text-int-\S+/g) || []).join(' ');
+		});
+	})
+
   	var chord_name = $(this).val()
 	var chord = teoria.chord(chord_name)
 

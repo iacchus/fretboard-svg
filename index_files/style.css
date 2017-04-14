@@ -188,7 +188,8 @@ input {
 /* major 7th */
 .circ-int-11 {
 	stroke: #000;
-	fill: #336;
+	fill: #c33;
+	fill-opacity: 0.8; 
 }
 .circ-text-int-11 {
 	fill: #fff;
