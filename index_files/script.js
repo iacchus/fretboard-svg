@@ -17,6 +17,7 @@ $(document).ready(function(){
 	  	data.push([note_name, int_semitones])
 	}	
 
+	console.log(data)
 	//remove ex classes
 	//$()
 
