@@ -63,6 +63,6 @@ $(document).ready(function(){
 	//tr.append('td').html(function(d){ return d[0] });
 	//tr.append('td').html(function(d){ return d[1] });
 	//tr.append('td').html(function(d){ return d[2] });
-	tr.append('td').html(function(d){ return d[0] }).exit().append('td').html(function(d){ return d[1] }).append('td').html(function(d){ return d[2] });
+	tr.append('td').html(function(d){ return d[0] }).append('td').html(function(d){ return d[1] }).append('td').html(function(d){ return d[2] });
   }) // on input change
 })
