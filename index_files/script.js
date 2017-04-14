@@ -87,7 +87,7 @@ $(document).ready(function(){
 
 	var tr = table.selectAll('tr').data(data).enter().append('tr')
 
-	for(yep=0; yep <= rdata.lengthi-1; yep++) {
+	for(yep=0; data[yep]; yep++) {
 		tr.append('td').html(function(d){ return d[yep] });
 	}
 
