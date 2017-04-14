@@ -49,7 +49,7 @@ $(document).ready(function(){
 	note_names = notes.toString().replace('#', 'u').split(',')
 	semi_tones = []
 
-	for(lol=0;voicing[lol];lol++) { semitones.push(voicing[lol].semitones())  }
+	for(lol=0;voicing[lol];lol++) { semi_tones.push(voicing[lol].semitones())  }
 	
 	data.push([int_names, note_names, semi_tones])
 
