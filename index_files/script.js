@@ -58,10 +58,10 @@ $(document).ready(function(){
 	}
 
 	rdata = Array()
-	for(item=0; item<data.length-1; item++) {
+	for(item=0; item<=data.length-1; item++) {
 		rdata[item] = []
 
-		for(aloop=0;aloop<data.length;aloop++) {
+		for(aloop=0;aloop<=data.length-1;aloop++) {
 			//rdata[item].push(data[aloop][item])
 			rdata[item][aloop] = data[aloop][item]
 		}
