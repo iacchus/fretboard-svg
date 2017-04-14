@@ -33,9 +33,10 @@ $(document).ready(function(){
 	data = []
 	for(note=0; notes[note]; note++)
 	{
+		int_name = voicing[note].simple().toString()
 	        note_name = notes[note].replace('#','u')
 		int_semitones = voicing[note].semitones()
-	  	data.push([note_name, int_semitones])
+	  	data.push([int_name,note_name, int_semitones])
 	}	
 
 	console.log(data)
@@ -45,14 +46,22 @@ $(document).ready(function(){
 
 	for(note=0; data[note]; note++)
 	{
-		cell_class = ".note-cell-name-" + data[note][0]
-		circ_class = ".note-circ-name-" + data[note][0]
-		text_class = ".note-text-name-" + data[note][0]
-		$(cell_class).each(function(){$(this).addClass("cell-selected cell-int-" + data[note][1])})
-		$(circ_class).each(function(){$(this).addClass("circ-selected circ-int-" + data[note][1])})
-		$(text_class).each(function(){$(this).addClass("text-selected text-int-" + data[note][1])})
+		cell_class = ".note-cell-name-" + data[note][1]
+		circ_class = ".note-circ-name-" + data[note][1]
+		text_class = ".note-text-name-" + data[note][1]
+		$(cell_class).each(function(){$(this).addClass("cell-selected cell-int-" + data[note][2])})
+		$(circ_class).each(function(){$(this).addClass("circ-selected circ-int-" + data[note][2])})
+		$(text_class).each(function(){$(this).addClass("text-selected text-int-" + data[note][2])})
 	}
 
 	console.log(data);
+
+	var table = d3.select('#info').append('table')
+
+	var tr = table.selectAll('tr').data(data).enter().append('tr')
+
+	var td = tr.html(funtion(d){ return d[0] });
+	var td = tr.html(funtion(d){ return d[1] });
+	var td = tr.html(funtion(d){ return d[2] });
   })
 })
