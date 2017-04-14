@@ -25,6 +25,8 @@ input {
 	fill: #fff;
 }
 
+.fret-1 { stroke-width:4; }
+
 .pos-label-1, .pos-highlight-1
 {
 	fill: #336;
