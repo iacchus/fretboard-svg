@@ -39,6 +39,7 @@ $(document).ready(function(){
 	  	data.push([int_name,note_name, int_semitones])
 	}	
 
+	window.data = data
 	console.log(data)
 	//remove ex classes
 	//$()
@@ -58,7 +59,8 @@ $(document).ready(function(){
 	for(item=0;data[item];item++) {
 		rdata[item] = []
 
-		for(aloop=0;data[item][aloop];aloop++) {
+		//for(aloop=0;data[item][aloop];aloop++) {
+		for(aloop=0;aloop<data.length;aloop++) {
 			//rdata[item].push(data[aloop][item])
 			rdata[item][aloop] = data[aloop][item]
 		}
