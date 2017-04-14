@@ -30,23 +30,13 @@ $(document).ready(function(){
 
 	//var notes = chord.notes()
 	//var notes = chord.simple()
-	var notes = chord.notes()
-	var voicing = chord.voicing()
+	var notes = chord.notes().toString().replace('#', 'u')
+	var voicing = chord.voicing().toString()
 
 	data = []
-	  /*
-	for(note=0; notes[note]; note++)
-	{
-		int_name = voicing[note].simple().toString()
-	        note_name = notes[note].replace('#', 'u')
-		int_semitones = voicing[note].semitones()
-	  	data.push([int_name,note_name, int_semitones])
-	}	
-	*/
-
-	//int_names = voicing.simple().toString().split(',')
-	int_names = voicing.toString().split(',')
-	note_names = notes.toString().replace('#', 'u').split(',')
+	
+	int_names = voicing.split(',')
+	note_names = notes.split(',')
 	semi_tones = []
 
 	for(lol=0;voicing[lol];lol++) { semi_tones.push(voicing[lol].semitones())  }
