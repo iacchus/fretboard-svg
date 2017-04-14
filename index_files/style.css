@@ -25,42 +25,47 @@ input {
 	fill: #fff;
 }
 
-.pos-label-1
+.pos-label-1, .pos-highlight-1
 {
 	fill: #336;
 }
 
-.pos-label-2
+.pos-label-2, .pos-highlight-3
 {
 	fill: #363;
 }
 
-.pos-label-3
+.pos-label-3, .pos-highlight-5
 {
 	fill: #f63;
 }
 
-.pos-label-4
+.pos-label-4, .pos-highlight-7
 {
 	fill: #c33;
 }
 
-.pos-label-5
+.pos-label-5, .pos-highlight-8
 {
 	fill: #6c6;
 }
 
-.pos-label-6
+.pos-label-6, .pos-highlight-10
 {
 	fill: #66c;
 }
 
-.pos-label-7
+.pos-label-7, .pos-highlight-12
 {
 	fill: #c36;
 }
 
-.pos-label-8
+.pos-label-8, .pos-highlight-14
 {
 	fill: #996;
+}
+
+.pos-label-text
+{
+	fill: #fff;
 }
