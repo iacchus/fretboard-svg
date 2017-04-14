@@ -14,7 +14,7 @@ $(document).ready(function(){
 	{
 		//console.yylog(notes[note].name());
 	        note_name = notes[note]
-		int_semitones = voicing[note]
+		int_semitones = voicing[note].semitones()
 	  	data.push([note_name, int_semitones])
 	}	 
 	console.log(data);
