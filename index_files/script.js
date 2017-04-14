@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('#main').load('fretboard.svg')
 
   $("#chordname").change(function(){
-  	var chord_name = this.val()
+  	var chord_name = $(this).val()
 	var chord = teoria.chord(chord_name)
 
 	var notes = chord.notes()
