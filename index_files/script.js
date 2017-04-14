@@ -9,6 +9,7 @@ $(document).ready(function(){
 
 	for(note=0; notes[note]; note++)
 		console.log(notes[note].name());
+		console.log(notes[note].toString());
 	 
   })
 })
