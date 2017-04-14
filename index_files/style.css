@@ -17,6 +17,8 @@ html, body {
 //#info-table {}
 
 table {
+  font-family:'Inconsolata';
+  font-weight: bold;
   color: #333; /* Lighten up font color */
   min-width: 40%;
   margin: 0 auto;
