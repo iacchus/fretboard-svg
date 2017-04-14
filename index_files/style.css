@@ -9,3 +9,8 @@ svg * {
     font-family: 'Old Standard TT', sans-serif;
     font-size: 14px;
 }
+
+input {
+
+  margin: 1em auto;
+}
