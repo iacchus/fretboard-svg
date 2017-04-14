@@ -60,8 +60,9 @@ $(document).ready(function(){
 
 	var tr = table.selectAll('tr').data(data).enter().append('tr')
 
-	tr.append('td').html(function(d){ return d[0] });
-	tr.append('td').html(function(d){ return d[1] });
-	tr.append('td').html(function(d){ return d[2] });
-  })
+	//tr.append('td').html(function(d){ return d[0] });
+	//tr.append('td').html(function(d){ return d[1] });
+	//tr.append('td').html(function(d){ return d[2] });
+	tr.append('td').html(function(d){ return d[0] }).append('td').html(function(d){ return d[0] }).append('td').html(function(d){ return d[0] });
+  }) // on input change
 })
