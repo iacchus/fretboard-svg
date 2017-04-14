@@ -22,16 +22,16 @@ svg * {
 input {
     font-family: 'Old Standard TT', sans-serif;
     font-size: 16px;
-    //margin: 1em auto;
+    margin: 1em auto;
     padding: 3px;
     display: block;
     border: 1px solid #999;
     border-radius: 2px;
     border-left: 5px solid #336;
 
-   position: fixed;
+   /*position: fixed;
    bottom: 17px;
-   right: 17px;
+   right: 17px;*/
 }
 
 .circ-selected {
