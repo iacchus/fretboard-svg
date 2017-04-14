@@ -64,7 +64,7 @@ $(document).ready(function(){
 
 	var tr = table.selectAll('tr').data(data).enter().append('tr')
 
-	for(yep=0; data[yep]; yep++) {
+	for(yep=0; data[0][yep]; yep++) {
 		tr.append('td').html(function(d){ return d[yep] });
 	}
 
