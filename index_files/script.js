@@ -55,7 +55,7 @@ $(document).ready(function(){
 		$(text_class).each(function(){$(this).addClass("text-selected text-int-" + data[note][2])})
 	}
 
-	rdata = []
+	/*rdata = []
 	for(item=0;data[item];item++) {
 		rdata[item] = []
 
@@ -63,6 +63,15 @@ $(document).ready(function(){
 		for(aloop=0;aloop<data.length;aloop++) {
 			//rdata[item].push(data[aloop][item])
 			rdata[item][aloop] = data[aloop][item]
+		}
+	}*/
+
+	rdata = Array()
+	for(item=0; item<data.length-1; item++) {
+		rdata[item] = []
+
+		for(aloop=0;aloop<data.length;aloop++) {
+			rdata[item].push(data[aloop][item])
 		}
 	}
 
