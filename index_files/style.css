@@ -23,6 +23,7 @@ input {
 
 .circ-selected {
 	fill: #336;
+	fill-opacity: 1;
 }
 
 .text-selected {
@@ -30,6 +31,8 @@ input {
 }
 
 .fret-1 { stroke-width:4; }
+
+/* position labels */
 
 .pos-label-1, .pos-highlight-1
 {
@@ -74,4 +77,114 @@ input {
 .pos-label-text
 {
 	fill: #fff;
+}
+
+/* chord intervals */
+
+/* tonic */
+.circ-int-00 {
+	stroke: #000;
+	fill: #336;
+}
+.circ-text-int-0 {
+	fill: #fff;
+}
+
+/* minor 2nd */
+.circ-int-1 {
+	//stroke: #000;
+	//fill: #336;
+}
+.circ-text-int-1 {
+	//fill: #fff;
+}
+
+/* maj 2nd */
+.circ-int-2 {
+	//stroke: #000;
+	//fill: #336;
+}
+.circ-text-int-2 {
+	//fill: #fff;
+}
+
+/* minor 3rd */
+.circ-int-3 {
+	stroke: #000;
+	fill: #f63;
+}
+.circ-text-int-3 {
+	//fill: #fff;
+}
+
+/* major third */
+.circ-int-4 {
+	//stroke: #000;
+	//fill: #336;
+}
+.circ-text-int-4 {
+	//fill: #fff;
+}
+
+/* perfect 4th */
+.circ-int-5 {
+	//stroke: #000;
+	//fill: #336;
+}
+.circ-text-int-5 {
+	//fill: #fff;
+}
+
+/* tritone - augmented 4th/diminished 5th */
+.circ-int-6 {
+	//stroke: #000;
+	//fill: #336;
+}
+.circ-text-int-6 {
+	//fill: #fff;
+}
+
+/* perfect 5th */
+.circ-int-7 {
+	stroke: #000;
+	fill: #c33;
+}
+.circ-text-int-7 {
+	fill: #fff;
+}
+
+/* minor 6th */
+.circ-int-8 {
+	//stroke: #000;
+	//fill: #336;
+}
+.circ-text-int-8 {
+	//fill: #fff;
+}
+
+/* major 6th */
+.circ-int-9 {
+	//stroke: #000;
+	//fill: #336;
+}
+.circ-text-int-9 {
+	//fill: #fff;
+}
+
+/* minor seventh */
+.circ-int-10 {
+	stroke: #000;
+	fill: #363;
+}
+.circ-text-int-10 {
+	fill: #fff;
+}
+
+/* major 7th */
+.circ-int-11 {
+	//stroke: #000;
+	//fill: #336;
+}
+.circ-text-int-11 {
+	//fill: #fff;
 }
