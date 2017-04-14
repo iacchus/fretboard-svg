@@ -120,7 +120,7 @@ input {
 /* major third */
 .circ-int-4 {
 	stroke: #000;
-	fill: #f63;
+	fill: #363;
 }
 .circ-text-int-4 {
 	fill: #fff;
@@ -147,7 +147,7 @@ input {
 /* perfect 5th */
 .circ-int-7 {
 	stroke: #000;
-	fill: #c33;
+	fill: #f63;
 }
 .circ-text-int-7 {
 	fill: #fff;
