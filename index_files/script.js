@@ -12,8 +12,7 @@ $(document).ready(function(){
 	data = []
 	for(note=0; notes[note]; note++)
 	{
-		//console.yylog(notes[note].name());
-	        note_name = notes[note]
+	        note_name = notes[note].replace('#','u')
 		int_semitones = voicing[note].semitones()
 	  	data.push([note_name, int_semitones])
 	}	
