@@ -77,7 +77,7 @@ $(document).ready(function(){
 
 	console.log(rdata);
 
-	var table = d3.select('#info').append('table')
+	var table = d3.select('#info').append('table').attr('id','infotable')
 
 	var tr = table.selectAll('tr').data(rdata).enter().append('tr')
 
