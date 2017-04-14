@@ -62,7 +62,8 @@ $(document).ready(function(){
 		rdata[item] = []
 
 		for(aloop=0;aloop<data.length;aloop++) {
-			rdata[item].push(data[aloop][item])
+			//rdata[item].push(data[aloop][item])
+			rdata[item][aloop] = data[aloop][item]
 		}
 	}
 
