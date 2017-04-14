@@ -24,3 +24,43 @@ input {
 .text-selected {
 	fill: #fff;
 }
+
+.pos-label-1
+{
+	fill: #336;
+}
+
+.pos-label-2
+{
+	fill: #363;
+}
+
+.pos-label-3
+{
+	fill: #f63;
+}
+
+.pos-label-4
+{
+	fill: #c33;
+}
+
+.pos-label-5
+{
+	fill: #6c6;
+}
+
+.pos-label-6
+{
+	fill: #66c;
+}
+
+.pos-label-7
+{
+	fill: #c36;
+}
+
+.pos-label-8
+{
+	fill: #996;
+}
