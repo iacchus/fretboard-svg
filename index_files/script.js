@@ -59,7 +59,8 @@ $(document).ready(function(){
 		rdata[item] = []
 
 		for(aloop=0;data[item][aloop];aloop++) {
-			rdata[item].push(data[aloop][item])
+			//rdata[item].push(data[aloop][item])
+			rdata[item][aloop] = data[aloop][item]
 		}
 	}
 
@@ -72,6 +73,5 @@ $(document).ready(function(){
 	tr.append('td').html(function(d){ return d[0] });
 	tr.append('td').html(function(d){ return d[1] });
 	tr.append('td').html(function(d){ return d[2] });
-	//tr.append('td').html(function(d){ return d[0] }).append('td').html(function(d){ return d[1] }).append('td').html(function(d){ return d[2] });
   }) // on input change
 })
