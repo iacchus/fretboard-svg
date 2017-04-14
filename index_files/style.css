@@ -111,7 +111,7 @@ input {
 /* minor 3rd */
 .circ-int-3 {
 	stroke: #000;
-	fill: #f63;
+	fill: #336;
 }
 .circ-text-int-3 {
 	fill: #fff;
@@ -120,7 +120,7 @@ input {
 /* major third */
 .circ-int-4 {
 	stroke: #000;
-	fill: #336;
+	fill: #f63;
 }
 .circ-text-int-4 {
 	fill: #fff;
