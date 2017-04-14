@@ -27,9 +27,9 @@ $(document).ready(function(){
 		cell_class = ".note-cell-name-" + data[note][0]
 		circ_class = ".note-circ-name-" + data[note][0]
 		text_class = ".note-text-name-" + data[note][0]
-		$(cell_class).each(fuunction(){$(this).addClass("cell-selected cell-int-" + data[note][1])})
-		$(circ_class).each(fuunction(){$(this).addClass("circ-selected circ-int-" + data[note][1])})
-		$(text_class).each(fuunction(){$(this).addClass("text-selected text-int-" + data[note][1])})
+		$(cell_class).each(function(){$(this).addClass("cell-selected cell-int-" + data[note][1])})
+		$(circ_class).each(function(){$(this).addClass("circ-selected circ-int-" + data[note][1])})
+		$(text_class).each(function(){$(this).addClass("text-selected text-int-" + data[note][1])})
 	}
 
 	console.log(data);
