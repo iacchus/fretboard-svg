@@ -223,15 +223,17 @@ input {
 /* tritone - augmented 4th/diminished 5th */
 .circ-int-6 {
 	stroke: #000;
-	fill: #336;
+	fill: #eeba1f;
 }
 .circ-text-int-6 {
-	fill: #fff;
+	//fill: #fff;
+	fill: #66c;
 }
 .thead-int-6 {
 	//stroke: #000;
 	//fill: #336;
-	background-color: #336;
+	color: #66c;
+	background-color: #eeba1f;
 }
 
 /* perfect 5th */
