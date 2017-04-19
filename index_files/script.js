@@ -38,8 +38,6 @@ $(document).ready(function(){
 		var int_names = scale.scale
 		var note_names = scale.simple()
 
-		//var voicing = chord.voicing().toString()
-
 		semi_tones = []
 		for(ihuu=0; notes[ihuu]; ihuu++) {
 			semi_tones[ihuu] = teoria.interval(notes[0], notes[ihuu]).semitones()
@@ -63,9 +61,6 @@ $(document).ready(function(){
 	data.push(int_names, note_names, semi_tones)
 	window.data = data
 	console.log(data)
-	//remove ex classes
-	//$()
-
 
 	for(item=0; data[0][item]; item++)
 	{
@@ -82,8 +77,8 @@ $(document).ready(function(){
 
 	var tr = table.selectAll('tr').data(data).enter().append('tr')
 
-	for(yep=0; data[0][yep]; yep++) {
-		tr.append('td').html(function(d){ return d[yep] });
+	for(yep=0; data[0][yep]; yep++) { // 0 here is a faux index only to count elements
+		tr.append('td').attr('class',function(d){ return "data-"+d; }).html(function(d){ return d[yep] });
 	}
 
   }) // on input change
