@@ -252,22 +252,24 @@ input {
 
 /* minor 6th */
 .circ-int-8 {
-	stroke: #000;
-	fill: #336;
+	//stroke: #000;
+	fill: #8c8ce0;
 }
 .circ-text-int-8 {
-	fill: #fff;
+	//fill: #fff;
+	fill: #000;
 }
 .thead-int-8 {
 	//stroke: #000;
 	//fill: #336;
-	background-color: #336;
+	color: #000;
+	background-color: #8c8ce0;
 }
 
 /* major 6th */
 .circ-int-9 {
-	stroke: #000;
-	fill: #336;
+	//stroke: #000;
+	fill: #66c;
 }
 .circ-text-int-9 {
 	fill: #fff;
@@ -275,7 +277,7 @@ input {
 .thead-int-9 {
 	//stroke: #000;
 	//fill: #336;
-	background-color: #336;
+	background-color: #66c;
 }
 
 /* minor seventh */
