@@ -280,16 +280,18 @@ input {
 
 /* minor seventh */
 .circ-int-10 {
-	stroke: #000;
-	fill: #c33;
+	//stroke: #000;
+	fill: #ff8c8c;
 }
 .circ-text-int-10 {
-	fill: #fff;
+	//fill: #fff;
+	fill: #000;
 }
 .thead-int-10 {
 	//stroke: #000;
 	//fill: #336;
-	background-color: #c33;
+	color: #000;
+	background-color: #ff8c8c;
 }
 
 /* major 7th */
