@@ -178,16 +178,17 @@ input {
 
 /* minor 3rd */
 .circ-int-3 {
-	stroke: #000;
-	fill: #336;
+	//stroke: #000;
+	fill: #74a974;
 }
 .circ-text-int-3 {
-	fill: #fff;
+	fill: #000;
 }
 .thead-int-3 {
 	//stroke: #000;
 	//fill: #336;
-	background-color: #336;
+	color: #000;
+	background-color: #74a974;
 }
 
 
