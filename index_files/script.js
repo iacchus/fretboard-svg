@@ -28,6 +28,8 @@ $(document).ready(function(){
   	var our_text = $(this).val()
 	scaletest = our_text.split(' ')
 
+	data = []
+
 	if(scaletest.length > 1) {
 		var scale = teoria.scale(scaletest[0], scaletest[1])
 		
@@ -48,8 +50,6 @@ $(document).ready(function(){
 
 		var notes = chord.simple().toString()
 		var voicing = chord.voicing().toString()
-
-		data = []
 		
 		int_names = voicing.split(',')
 		note_names = notes.split(',')
