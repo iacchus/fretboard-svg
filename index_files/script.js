@@ -46,7 +46,7 @@ $(document).ready(function(){
 		}
 	}
 	else {
-		var chord = teoria.chord(scaletest)
+		var chord = teoria.chord(scaletest[0]) //it makes an array anyway...
 
 		var notes = chord.simple().toString()
 		var voicing = chord.voicing().toString()
