@@ -164,7 +164,7 @@ input {
 /* maj 2nd */
 .circ-int-2 {
 	stroke: #000;
-	fill: #336;
+	fill: #996;
 }
 .circ-text-int-2 {
 	fill: #fff;
@@ -172,7 +172,7 @@ input {
 .thead-int-2 {
 	//stroke: #000;
 	//fill: #336;
-	background-color: #336;
+	background-color: #996;
 }
 
 /* minor 3rd */
@@ -207,7 +207,7 @@ input {
 /* perfect 4th */
 .circ-int-5 {
 	stroke: #000;
-	fill: #336;
+	fill: #66c;
 }
 .circ-text-int-5 {
 	fill: #fff;
@@ -215,7 +215,7 @@ input {
 .thead-int-5 {
 	//stroke: #000;
 	//fill: #336;
-	background-color: #336;
+	background-color: #66c;
 }
 
 /* tritone - augmented 4th/diminished 5th */
