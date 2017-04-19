@@ -26,7 +26,7 @@ $(document).ready(function(){
 	$('#info-table').remove();
 
   	var our_text = $(this).val()
-	scaletest = our.split(' ')
+	scaletest = our_text.split(' ')
 
 	if(scaletest.length > 1) {
 		var scale = teoria.scale(scaletest[0], scaletest[1])
