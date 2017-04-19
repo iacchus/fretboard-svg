@@ -28,21 +28,38 @@ $(document).ready(function(){
   	var chord_name = $(this).val()
 	var chord = teoria.chord(chord_name)
 
-	var notes = chord.simple().toString()
-	var voicing = chord.voicing().toString()
+	if(!chord) {
+		scaletest = chord_name.split(' ')
+		var scale = teoria.scale(scaletest[0], scaletest{1})
+		
+		notes = scale.notes()
 
-	data = []
-	
-	int_names = voicing.split(',')
-	note_names = notes.split(',')
-	semi_tones = []
+		var int_names = scale.scale
+		var note_names = scale.simple()
 
-	cd_vc = chord.voicing()
+		//var voicing = chord.voicing().toString()
 
-	for(lol=0;cd_vc[lol];lol++) { semi_tones.push(cd_vc[lol].semitones())  }
-	
+		semi_tones = []
+		for(ihuu=0; notes[ihuu]; ihuu++) {
+			semi_tones[ihuu] = teoria.Interval.between(notes[0], notes[ihuu]).semitones()
+		}
+	}
+	else {
+		var notes = chord.simple().toString()
+		var voicing = chord.voicing().toString()
+
+		data = []
+		
+		int_names = voicing.split(',')
+		note_names = notes.split(',')
+		semi_tones = []
+
+		cd_vc = chord.voicing()
+
+		for(lol=0;cd_vc[lol];lol++) { semi_tones.push(cd_vc[lol].semitones())  }
+		
+	}
 	data.push(int_names, note_names, semi_tones)
-
 	window.data = data
 	console.log(data)
 	//remove ex classes
