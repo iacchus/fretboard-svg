@@ -84,7 +84,7 @@ $(document).ready(function(){
 	heads = $('table > tr:first-of-type td')
 	for(xx=0;heads[xx];xx++)
 	  {
-		$(heads[xx]).addClass('thead-int-'+data[2][xx])
+		$(heads[xx]).addClass('thead-int-'+data[2][xx]+" thead-all")
 	  }
 	
   }) // on input change

@@ -72,6 +72,10 @@ input {
 	fill: #fff;
 }
 
+.thead-all {
+  color: #fff;
+}
+
 .fret-1 { stroke-width:4; }
 
 /* position labels */
