@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 		semi_tones = []
 		for(ihuu=0; notes[ihuu]; ihuu++) {
-			semi_tones[ihuu] = teoria.Interval.between(notes[0], notes[ihuu]).semitones()
+			semi_tones[ihuu] = teoria.interval(notes[0], notes[ihuu]).semitones()
 		}
 	}
 	else {
