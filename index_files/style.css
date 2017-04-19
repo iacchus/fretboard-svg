@@ -27,6 +27,12 @@ html, body {
 	padding: 7px;
 }
 
+a {
+	color: #336;
+	font-weight: bold;
+	text-decoration: none;
+}
+
 table {
   font-family:'Inconsolata';
   font-weight: bold;
