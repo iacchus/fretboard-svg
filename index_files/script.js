@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 	if(!chord) {
 		scaletest = chord_name.split(' ')
-		var scale = teoria.scale(scaletest[0], scaletest{1})
+		var scale = teoria.scale(scaletest[0], scaletest[1])
 		
 		notes = scale.notes()
 
