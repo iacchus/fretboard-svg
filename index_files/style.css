@@ -78,6 +78,7 @@ input {
    /*position: fixed;
    bottom: 17px;
    right: 17px;*/
+    outline:none;
 }
 
 .circ-selected {
