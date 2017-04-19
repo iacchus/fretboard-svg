@@ -136,6 +136,11 @@ input {
 .circ-text-int-0 {
 	fill: #fff;
 }
+.thead-int-0 {
+	//stroke: #000;
+	//fill: #336;
+	background-color: #336;
+}
 
 /* minor 2nd */
 .circ-int-1 {
@@ -144,6 +149,11 @@ input {
 }
 .circ-text-int-1 {
 	//fill: #fff;
+}
+.thead-int-1 {
+	//stroke: #000;
+	//fill: #336;
+	//background-color: #336;
 }
 
 /* maj 2nd */
@@ -154,6 +164,11 @@ input {
 .circ-text-int-2 {
 	fill: #fff;
 }
+.thead-int-2 {
+	//stroke: #000;
+	//fill: #336;
+	background-color: #336;
+}
 
 /* minor 3rd */
 .circ-int-3 {
@@ -163,6 +178,12 @@ input {
 .circ-text-int-3 {
 	fill: #fff;
 }
+.thead-int-3 {
+	//stroke: #000;
+	//fill: #336;
+	background-color: #336;
+}
+
 
 /* major third */
 .circ-int-4 {
@@ -171,6 +192,11 @@ input {
 }
 .circ-text-int-4 {
 	fill: #fff;
+}
+.thead-int-4 {
+	//stroke: #000;
+	//fill: #336;
+	background-color: #363;
 }
 
 /* perfect 4th */
@@ -181,6 +207,11 @@ input {
 .circ-text-int-5 {
 	fill: #fff;
 }
+.thead-int-5 {
+	//stroke: #000;
+	//fill: #336;
+	background-color: #336;
+}
 
 /* tritone - augmented 4th/diminished 5th */
 .circ-int-6 {
@@ -189,6 +220,11 @@ input {
 }
 .circ-text-int-6 {
 	fill: #fff;
+}
+.thead-int-6 {
+	//stroke: #000;
+	//fill: #336;
+	background-color: #336;
 }
 
 /* perfect 5th */
@@ -199,6 +235,11 @@ input {
 .circ-text-int-7 {
 	fill: #fff;
 }
+.thead-int-7 {
+	//stroke: #000;
+	//fill: #336;
+	background-color: #f63;
+}
 
 /* minor 6th */
 .circ-int-8 {
@@ -207,6 +248,11 @@ input {
 }
 .circ-text-int-8 {
 	fill: #fff;
+}
+.thead-int-8 {
+	//stroke: #000;
+	//fill: #336;
+	background-color: #336;
 }
 
 /* major 6th */
@@ -217,6 +263,11 @@ input {
 .circ-text-int-9 {
 	fill: #fff;
 }
+.thead-int-9 {
+	//stroke: #000;
+	//fill: #336;
+	background-color: #336;
+}
 
 /* minor seventh */
 .circ-int-10 {
@@ -225,6 +276,11 @@ input {
 }
 .circ-text-int-10 {
 	fill: #fff;
+}
+.thead-int-10 {
+	//stroke: #000;
+	//fill: #336;
+	background-color: #c33;
 }
 
 /* major 7th */
@@ -235,4 +291,9 @@ input {
 }
 .circ-text-int-11 {
 	fill: #fff;
+}
+.thead-int-11 {
+	//stroke: #000;
+	//fill: #336;
+	background-color: #c33;
 }
