@@ -150,15 +150,16 @@ input {
 /* minor 2nd */
 .circ-int-1 {
 	//stroke: #000;
-	//fill: #336;
+	fill: #bcbc8d;
 }
 .circ-text-int-1 {
-	//fill: #fff;
+	fill: #000;
 }
 .thead-int-1 {
 	//stroke: #000;
 	//fill: #336;
-	background-color: #336;
+	color: #000;
+	background-color: #bcbc8d;
 }
 
 /* maj 2nd */
