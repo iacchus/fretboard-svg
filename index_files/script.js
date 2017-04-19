@@ -25,11 +25,10 @@ $(document).ready(function(){
 
 	$('#info-table').remove();
 
-  	var chord_name = $(this).val()
-	var chord = teoria.chord(chord_name)
+  	var our_text = $(this).val()
+	scaletest = our.split(' ')
 
-	if(!chord) {
-		scaletest = chord_name.split(' ')
+	if(scaletest.length > 1) {
 		var scale = teoria.scale(scaletest[0], scaletest[1])
 		
 		notes = scale.notes()
@@ -45,6 +44,8 @@ $(document).ready(function(){
 		}
 	}
 	else {
+		var chord = teoria.chord(scaletest)
+
 		var notes = chord.simple().toString()
 		var voicing = chord.voicing().toString()
 
