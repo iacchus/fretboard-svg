@@ -74,6 +74,7 @@ input {
 
 .thead-all {
   color: #fff;
+  border: 1px solid #333;
 }
 
 .fret-1 { stroke-width:4; }
