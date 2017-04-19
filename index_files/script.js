@@ -19,7 +19,7 @@ $(document).ready(function(){
 	$("text").each(function(){
 		$(this).removeClass('text-selected')
 		$(this).removeClass (function (index, className) {
-			return (className.match (/(^|\s)text-int-\S+/g) || []).join(' ');
+			return (className.match (/(^|\s)circ-text-int-\S+/g) || []).join(' ');
 		});
 	})
 
