@@ -78,8 +78,14 @@ $(document).ready(function(){
 	var tr = table.selectAll('tr').data(data).enter().append('tr')
 
 	for(yep=0; data[0][yep]; yep++) { // 0 here is a faux index only to count elements
-		tr.append('td').attr('class',function(d){ return "data-"+d; }).html(function(d){ return d[yep] });
+		tr.append('td').html(function(d){ return d[yep] });
 	}
 
+	$heads = $('table > tr:first-of-type td')
+	for(xx=0;$heads[xx];xx++)
+	  {
+		$heads[xx].addClass('thead-int-'+data[2][xx])
+	  }
+	
   }) // on input change
 })
